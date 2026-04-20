@@ -1,64 +1,76 @@
-# Student Engagement & Retention Analysis (EdTech)
+# 📊 Student Engagement & Retention Analysis (EdTech)
 
-## 📊 Project Overview
-This project analyzes student engagement and dropout behavior in an EdTech platform.
+## 🚀 Overview
+This project analyzes student behavior in an EdTech platform to identify key drivers of retention, engagement, and dropout.
 
-The goal is to identify patterns in student activity and understand factors affecting student retention.
+The project combines SQL, Python, and dashboarding to simulate a real product analytics case.
 
 **Focus:** retention analysis, engagement metrics, behavioral patterns
 
 ---
 
 ## 📁 Dataset
-The dataset was structured to mimic realistic engagement and retention patterns observed in EdTech platforms.
-The dataset includes weekly data on student activity:
+Simulated dataset with weekly student activity:
 
-- `student_id` — unique student identifier  
-- `group` — course type (OGE, EGE, Grade10)  
-- `week` — study timeline  
-- `lessons_attended` — number of attended lessons  
-- `homework_done_pct` — homework completion rate  
-- `platform_activity` — activity on the platform  
-- `questions_asked` — number of questions asked  
-- `mock_score` — exam performance  
-- `engagement_index` — aggregated engagement metric  
-- `final_status` — Active / Dropout  
+- student_id — unique user  
+- group — course type  
+- week — timeline  
+- lessons_attended  
+- homework_done_pct  
+- platform_activity  
+- questions_asked  
+- mock_score  
+- engagement_index  
+- final_status (Active / Dropout)  
 
 ---
 
-## 📈 Key Metrics
-- **Dropout Rate:** 64%  
-- **Average Engagement:** 0.72  
-- **Average Score:** 5.29  
+## 🛠 Tools Used
+- SQL (BigQuery)  
+- Python (pandas, matplotlib)  
+- Google Sheets (dashboard)  
 
 ---
 
 ## 📊 Dashboard
 
 The dashboard includes:
-- Dropout distribution by student group  
-- Student retention dynamics over time  
-- Engagement and performance comparison (Active vs Dropout)  
-- Behavioral activity analysis (questions & platform usage)  
+- Retention dynamics over time  
+- Dropout distribution by group  
+- Engagement vs performance comparison  
+- Behavioral activity analysis  
+
+---
+
+## 📈 Key Analyses
+- Retention analysis (cohort logic)  
+- Funnel analysis (user progression)  
+- Engagement segmentation  
+- Dropout analysis  
 
 ---
 
 ## 🔍 Key Insights
-- Students with higher engagement tend to remain active, though the gap is moderate  
-- Some high-performing students still drop out → indicating non-academic factors  
+- Retention remains stable in early weeks, then drops significantly after Week 3–4  
+- Students with higher engagement tend to remain active, but the gap is moderate  
+- Some high-performing users still drop out → indicating non-academic factors  
 - The OGE_5 group shows the highest dropout despite relatively strong engagement  
-- Retention drops significantly after week 3 → critical intervention point  
-
----
-
-## 🛠 Tools Used
-- Google Sheets  
-- Data Analysis  
-- Data Visualization  
 
 ---
 
 ## 💡 Conclusion
 Student retention depends not only on engagement and academic performance but also on external factors.
 
-Early-stage monitoring (weeks 2–3) is essential to reduce dropout rates and improve retention strategies.
+Early-stage monitoring (weeks 2–3) is critical to reduce dropout and improve retention strategies.
+
+---
+
+## 📁 Project Structure
+├── sql/
+├── python/
+├── dashboard/
+└── README.md
+---
+
+## ⚠️ Note
+Dataset is synthetic and used for portfolio purposes.
